@@ -5,11 +5,6 @@ if(isset($_GET['catid'])){
 }
 
     ?>
-
-
-
-
-  
 <?php
  $sql="select * from post_details left join categories on post_details.post_category_id=categories.categorie_id where post_details.post_category_id=$catid and categories.categorie_id=$catid limit 8";
  $result=mysqli_query($conn,$sql);
